@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Creating image circos.png and writing report to run.out."
+
+echo "Takes ~45-60 seconds to generate."
+
+../bin/circos -conf etc/mycircos.conf -debug_group summary,timer > run.out
+
